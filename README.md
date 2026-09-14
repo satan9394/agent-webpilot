@@ -1,6 +1,11 @@
 # Agent-WebPilot 🚀
 
+<p align="center">
+  <b>English</b> | <a href="README_CN.md">简体中文</a>
+</p>
+
 [![CI](https://github.com/satan9394/agent-webpilot/actions/workflows/ci.yml/badge.svg)](https://github.com/satan9394/agent-webpilot/actions/workflows/ci.yml)
+[![GitHub release](https://img.shields.io/github/v/release/satan9394/agent-webpilot)](https://github.com/satan9394/agent-webpilot/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python: 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![Protocol: MCP](https://img.shields.io/badge/MCP-Standard%20Stdio-green.svg)](https://modelcontextprotocol.io/)
@@ -202,6 +207,16 @@ pytest tests/ -v
 
 ---
 
+## 👥 Contributors
+
+We welcome contributions from the community! Check out [CONTRIBUTING.md](CONTRIBUTING.md) to get involved.
+
+- **Author & Maintainer**: [@satan9394](https://github.com/satan9394)
+- Special thanks to all open-source projects, issue reporters, and pull request contributors.
+
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
