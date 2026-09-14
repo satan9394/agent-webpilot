@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-webpilot"
+version = "0.1.0"
+description = "Enterprise Agent-Native Web Automation & Anti-Detection Runtime via Chrome CDP."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "satan9394" }
+]
+keywords = [
+    "ai-agent",
+    "cdp",
+    "chrome-devtools-protocol",
+    "web-automation",
+    "anti-scraping",
+    "mcp",
+    "rpa",
+    "vibe-coding"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+]
+dependencies = [
+    "requests>=2.28.0",
+    "websocket-client>=1.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+agent-webpilot = "agent_webpilot.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/satan9394/agent-webpilot"
+Repository = "https://github.com/satan9394/agent-webpilot"
+Issues = "https://github.com/satan9394/agent-webpilot/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]
